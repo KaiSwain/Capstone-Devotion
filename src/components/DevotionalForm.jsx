@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { PostDevotion } from "../services.jsx/DevotionalService";
+import './DevotionalForm.css'
 
-export const DevotionalForm = () => {
+export const DevotionalForm = ({sharedRandomVerse}) => {
   const [devotion, setDevotion] = useState({
     id: "",
     title: "",
+    location: "",
     verse: "",
     chapter: "",
     theme: "",
@@ -37,34 +39,25 @@ export const DevotionalForm = () => {
           rows="1"
           cols="10"
           placeholder="Theme"
-          defaultValue={devotion.theme}
+          defaultValue={sharedRandomVerse.theme}
           onChange={(event) =>
             setDevotion({ ...devotion, theme: event.target.value })
           }
         ></input>
+        
         <input
-          name="devotion_chapter"
+          name="devotion_location"
           rows="1"
           cols="10"
-          placeholder="Chapter"
-          defaultValue={devotion.chapter}
+          placeholder="location"
+          defaultValue={sharedRandomVerse.location}
           onChange={(event) =>
-            setDevotion({ ...devotion, chapter: event.target.value })
-          }
-        ></input>
-        <input
-          name="devotion_verse"
-          rows="1"
-          cols="10"
-          placeholder="Verse"
-          defaultValue={devotion.verse}
-          onChange={(event) =>
-            setDevotion({ ...devotion, verse: event.target.value })
+            setDevotion({ ...devotion, location: event.target.value })
           }
         ></input>
         <textarea
           name="devotion_body"
-          rows="10"
+          rows="11"
           cols="50"
           placeholder="Write your devotion here..."
           defaultValue={devotion.body}

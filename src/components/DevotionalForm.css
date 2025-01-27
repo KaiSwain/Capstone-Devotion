@@ -1,0 +1,79 @@
+/* General form container styling */
+.devo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input and textarea styling */
+  .devo-form input,
+  .devo-form textarea {
+    width: 100%; /* Full width */
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    
+    resize: none; /* Prevent textarea resize */
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Placeholder styling */
+  .devo-form input::placeholder,
+  .devo-form textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  /* Focus state for inputs and textarea */
+  .devo-form input:focus,
+  .devo-form textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none;
+  }
+  
+  /* Button styling */
+  .devotion-save-btn {
+    
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .devotion-save-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .devotion-save-btn:active {
+    transform: scale(0.95);
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .devo-form {
+      padding: 15px;
+    }
+  
+    .devo-form input,
+    .devo-form textarea {
+      font-size: 14px;
+    }
+  
+    .devotion-save-btn {
+      font-size: 14px;
+    }
+  }
+  
