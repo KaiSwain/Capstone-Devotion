@@ -7,13 +7,14 @@ export const DevotionalForm = () => {
     title: "",
     verse: "",
     chapter: "",
+    theme: "",
     body: "",
   });
 
   const handleSave = (event) => {
     event.preventDefault(); //prevents the automatic refresh
 
-    console.log("Handle Save",devotion);
+    console.log("Handle Save", devotion);
 
     PostDevotion(devotion);
   };
@@ -21,39 +22,59 @@ export const DevotionalForm = () => {
   return (
     <div className="devo-form">
       <form>
-        <textarea
+        <input
           name="devotion_title"
           rows="1"
           cols="10"
           placeholder="Title"
           defaultValue={devotion.title}
-          onChange={(event) => setDevotion({ ...devotion, title: event.target.value})}
-        ></textarea>
-        <textarea
+          onChange={(event) =>
+            setDevotion({ ...devotion, title: event.target.value })
+          }
+        ></input>
+        <input
+          name="devotion_theme"
+          rows="1"
+          cols="10"
+          placeholder="Theme"
+          defaultValue={devotion.theme}
+          onChange={(event) =>
+            setDevotion({ ...devotion, theme: event.target.value })
+          }
+        ></input>
+        <input
           name="devotion_chapter"
           rows="1"
           cols="10"
           placeholder="Chapter"
           defaultValue={devotion.chapter}
-          onChange={(event) => setDevotion({ ...devotion, chapter: event.target.value})}
-        ></textarea>
-        <textarea
+          onChange={(event) =>
+            setDevotion({ ...devotion, chapter: event.target.value })
+          }
+        ></input>
+        <input
           name="devotion_verse"
           rows="1"
           cols="10"
           placeholder="Verse"
           defaultValue={devotion.verse}
-          onChange={(event) => setDevotion({ ...devotion, verse: event.target.value})}
-        ></textarea>
+          onChange={(event) =>
+            setDevotion({ ...devotion, verse: event.target.value })
+          }
+        ></input>
         <textarea
           name="devotion_body"
           rows="10"
           cols="50"
           placeholder="Write your devotion here..."
           defaultValue={devotion.body}
-          onChange={(event) => setDevotion({ ...devotion, body: event.target.value})}
+          onChange={(event) =>
+            setDevotion({ ...devotion, body: event.target.value })
+          }
         ></textarea>
-        <button className="devotion-save-btn" onClick={handleSave}> Save </button>
+        <button className="devotion-save-btn" onClick={handleSave}>
+          Save
+        </button>
       </form>
     </div>
   );
