@@ -2,16 +2,8 @@ import { useState } from "react";
 import { PostDevotion } from "../services.jsx/DevotionalService";
 import './DevotionalForm.css'
 
-export const DevotionalForm = ({sharedRandomVerse}) => {
-  const [devotion, setDevotion] = useState({
-    id: "",
-    title: "",
-    location: "",
-    verse: "",
-    chapter: "",
-    theme: "",
-    body: "",
-  });
+export const DevotionalForm = ({sharedRandomVerse, devotion, setDevotion}) => {
+  
 
   const handleSave = (event) => {
     event.preventDefault(); //prevents the automatic refresh
@@ -39,7 +31,7 @@ export const DevotionalForm = ({sharedRandomVerse}) => {
           rows="1"
           cols="10"
           placeholder="Theme"
-          defaultValue={sharedRandomVerse.theme}
+          value={devotion.theme}
           onChange={(event) =>
             setDevotion({ ...devotion, theme: event.target.value })
           }
@@ -50,7 +42,7 @@ export const DevotionalForm = ({sharedRandomVerse}) => {
           rows="1"
           cols="10"
           placeholder="location"
-          defaultValue={sharedRandomVerse.location}
+          value={devotion.location}
           onChange={(event) =>
             setDevotion({ ...devotion, location: event.target.value })
           }
