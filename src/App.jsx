@@ -5,10 +5,20 @@ import { InspirationForm } from "./components/InspirationForm"
 
 export const App  = () => {
  const [sharedRandomVerse, setSharedRandomVerse] = useState({})
+const [devotion, setDevotion] = useState({
+    id: "",
+    title: "",
+    location: "",
+    theme: "",
+    body: "",
+  });
 
  return <>
- <DevotionalForm sharedRandomVerse={sharedRandomVerse}/>
- <InspirationForm setSharedRandomVerse={setSharedRandomVerse}/>
+ <div className="all-views">
+
+ <DevotionalForm className="devotional-view" devotion={devotion} setDevotion={setDevotion} sharedRandomVerse={sharedRandomVerse}/>
+ <InspirationForm className="Inspiration-view" devotion={devotion} setDevotion={setDevotion} sharedRandomVerse={sharedRandomVerse} setSharedRandomVerse={setSharedRandomVerse}/>
+ </div>
  </>
 }
   

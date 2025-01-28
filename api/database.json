@@ -61,75 +61,274 @@
       "location": "Matthew 5:9"
     },
     {
-        "id": 11,
-        "verse": "The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?",
-        "theme": "Fear",
-        "location": "Psalm 27:1"
-      },
-      {
-        "id": 12,
-        "verse": "For we live by faith, not by sight.",
-        "theme": "Faith",
-        "location": "2 Corinthians 5:7"
-      },
-      {
-        "id": 13,
-        "verse": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
-        "theme": "Purpose",
-        "location": "Romans 8:28"
-      },
-      {
-        "id": 14,
-        "verse": "The righteous cry out, and the Lord hears them; he delivers them from all their troubles.",
-        "theme": "Deliverance",
-        "location": "Psalm 34:17"
-      },
-      {
-        "id": 15,
-        "verse": "He gives strength to the weary and increases the power of the weak.",
-        "theme": "Strength",
-        "location": "Isaiah 40:29"
-      },
-      {
-        "id": 16,
-        "verse": "Rejoice in hope, be patient in tribulation, be constant in prayer.",
-        "theme": "Patience",
-        "location": "Romans 12:12"
-      },
-      {
-        "id": 17,
-        "verse": "But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
-        "theme": "Hope",
-        "location": "Isaiah 40:31"
-      },
-      {
-        "id": 18,
-        "verse": "Be completely humble and gentle; be patient, bearing with one another in love.",
-        "theme": "Humility",
-        "location": "Ephesians 4:2"
-      },
-      {
-        "id": 19,
-        "verse": "Let all that you do be done in love.",
-        "theme": "Love",
-        "location": "1 Corinthians 16:14"
-      },
-      {
-        "id": 20,
-        "verse": "Do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.",
-        "theme": "Worry",
-        "location": "Matthew 6:34"
-      }
+      "id": 11,
+      "verse": "The Lord is my light and my salvation—whom shall I fear? The Lord is the stronghold of my life—of whom shall I be afraid?",
+      "theme": "Fear",
+      "location": "Psalm 27:1"
+    },
+    {
+      "id": 12,
+      "verse": "For we live by faith, not by sight.",
+      "theme": "Faith",
+      "location": "2 Corinthians 5:7"
+    },
+    {
+      "id": 13,
+      "verse": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+      "theme": "Purpose",
+      "location": "Romans 8:28"
+    },
+    {
+      "id": 14,
+      "verse": "The righteous cry out, and the Lord hears them; he delivers them from all their troubles.",
+      "theme": "Deliverance",
+      "location": "Psalm 34:17"
+    },
+    {
+      "id": 15,
+      "verse": "He gives strength to the weary and increases the power of the weak.",
+      "theme": "Strength",
+      "location": "Isaiah 40:29"
+    },
+    {
+      "id": 16,
+      "verse": "Rejoice in hope, be patient in tribulation, be constant in prayer.",
+      "theme": "Patience",
+      "location": "Romans 12:12"
+    },
+    {
+      "id": 17,
+      "verse": "But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint.",
+      "theme": "Hope",
+      "location": "Isaiah 40:31"
+    },
+    {
+      "id": 18,
+      "verse": "Be completely humble and gentle; be patient, bearing with one another in love.",
+      "theme": "Humility",
+      "location": "Ephesians 4:2"
+    },
+    {
+      "id": 19,
+      "verse": "Let all that you do be done in love.",
+      "theme": "Love",
+      "location": "1 Corinthians 16:14"
+    },
+    {
+      "id": 20,
+      "verse": "Do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own.",
+      "theme": "Worry",
+      "location": "Matthew 6:34"
+    },
+    {
+      "id": 21,
+      "verse": "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness.",
+      "theme": "Faithfulness",
+      "location": "Lamentations 3:22-23"
+    },
+    {
+      "id": 22,
+      "verse": "The Lord is good, a refuge in times of trouble. He cares for those who trust in him.",
+      "theme": "Trust",
+      "location": "Nahum 1:7"
+    },
+    {
+      "id": 23,
+      "verse": "For the Spirit God gave us does not make us timid, but gives us power, love and self-discipline.",
+      "theme": "Power",
+      "location": "2 Timothy 1:7"
+    },
+    {
+      "id": 24,
+      "verse": "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.",
+      "theme": "Perseverance",
+      "location": "Galatians 6:9"
+    },
+    {
+      "id": 25,
+      "verse": "Come to me, all who labor and are heavy laden, and I will give you rest.",
+      "theme": "Rest",
+      "location": "Matthew 11:28"
+    },
+    {
+      "id": 26,
+      "verse": "My grace is sufficient for you, for my power is made perfect in weakness.",
+      "theme": "Grace",
+      "location": "2 Corinthians 12:9"
+    },
+    {
+      "id": 27,
+      "verse": "And my God will supply every need of yours according to his riches in glory in Christ Jesus.",
+      "theme": "Provision",
+      "location": "Philippians 4:19"
+    },
+    {
+      "id": 28,
+      "verse": "You will keep in perfect peace those whose minds are steadfast, because they trust in you.",
+      "theme": "Peace",
+      "location": "Isaiah 26:3"
+    },
+    {
+      "id": 29,
+      "verse": "Cast your burden on the Lord, and he will sustain you; he will never permit the righteous to be moved.",
+      "theme": "Sustenance",
+      "location": "Psalm 55:22"
+    },
+    {
+      "id": 30,
+      "verse": "Finally, be strong in the Lord and in the strength of his might.",
+      "theme": "Strength",
+      "location": "Ephesians 6:10"
+    },
+    {
+      "id": 31,
+      "verse": "The Lord will fight for you; you need only to be still.",
+      "theme": "Strength",
+      "location": "Exodus 14:14"
+    },
+    {
+      "id": 32,
+      "verse": "The Lord is near to the brokenhearted and saves the crushed in spirit.",
+      "theme": "Comfort",
+      "location": "Psalm 34:18"
+    },
+    {
+      "id": 33,
+      "verse": "I have set the Lord always before me; because he is at my right hand, I shall not be shaken.",
+      "theme": "Faith",
+      "location": "Psalm 16:8"
+    },
+    {
+      "id": 34,
+      "verse": "Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him.",
+      "theme": "Perseverance",
+      "location": "James 1:12"
+    },
+    {
+      "id": 35,
+      "verse": "I will give thanks to you, Lord, with all my heart; I will tell of all your wonderful deeds.",
+      "theme": "Gratitude",
+      "location": "Psalm 9:1"
+    },
+    {
+      "id": 36,
+      "verse": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.",
+      "theme": "Fear",
+      "location": "Psalm 23:4"
+    },
+    {
+      "id": 37,
+      "verse": "For where two or three gather in my name, there am I with them.",
+      "theme": "Community",
+      "location": "Matthew 18:20"
+    },
+    {
+      "id": 38,
+      "verse": "The name of the Lord is a strong tower; the righteous run into it and are safe.",
+      "theme": "Safety",
+      "location": "Proverbs 18:10"
+    },
+    {
+      "id": 39,
+      "verse": "Be still, and know that I am God; I will be exalted among the nations, I will be exalted in the earth.",
+      "theme": "Peace",
+      "location": "Psalm 46:10"
+    },
+    {
+      "id": 40,
+      "verse": "The Lord your God is with you, the Mighty Warrior who saves. He will take great delight in you; in his love he will no longer rebuke you, but will rejoice over you with singing.",
+      "theme": "Joy",
+      "location": "Zephaniah 3:17"
+    },
+    {
+      "id": 41,
+      "verse": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.",
+      "theme": "Purpose",
+      "location": "Romans 8:28"
+    },
+    {
+      "id": 42,
+      "verse": "For he will command his angels concerning you to guard you in all your ways.",
+      "theme": "Protection",
+      "location": "Psalm 91:11"
+    },
+    {
+      "id": 43,
+      "verse": "The Lord is my shepherd, I lack nothing.",
+      "theme": "Provision",
+      "location": "Psalm 23:1"
+    },
+    {
+      "id": 44,
+      "verse": "Above all, love each other deeply, because love covers over a multitude of sins.",
+      "theme": "Love",
+      "location": "1 Peter 4:8"
+    },
+    {
+      "id": 45,
+      "verse": "Let us hold unswervingly to the hope we profess, for he who promised is faithful.",
+      "theme": "Hope",
+      "location": "Hebrews 10:23"
+    },
+    {
+      "id": 46,
+      "verse": "The Lord is my strength and my shield; my heart trusts in him, and he helps me. My heart leaps for joy, and with my song I praise him.",
+      "theme": "Trust",
+      "location": "Psalm 28:7"
+    },
+    {
+      "id": 47,
+      "verse": "The heart of man plans his way, but the Lord establishes his steps.",
+      "theme": "Guidance",
+      "location": "Proverbs 16:9"
+    },
+    {
+      "id": 48,
+      "verse": "Do not conform to the pattern of this world, but be transformed by the renewing of your mind.",
+      "theme": "Renewal",
+      "location": "Romans 12:2"
+    },
+    {
+      "id": 49,
+      "verse": "And without faith it is impossible to please God, because anyone who comes to him must believe that he exists and that he rewards those who earnestly seek him.",
+      "theme": "Faith",
+      "location": "Hebrews 11:6"
+    },
+    {
+      "id": 50,
+      "verse": "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God.",
+      "theme": "Grace",
+      "location": "Ephesians 2:8"
+    }
   ],
   "devotions": [
     {
       "id": 1,
-      "title": "Test",
-      "location": "",
-      "verse": "",
-      "chapter": "",
-      "theme": "",
-      "body": "dwaddwa"
+      "title": "dwadwa",
+      "location": "wwdadwwada",
+      "theme": "ddwadawdad",
+      "body": "wdawdwadadwadswa"
+    },
+    {
+      "id": 2,
+      "title": "dwadwa",
+      "location": "Isaiah 40:29",
+      "theme": "Strength",
+      "body": "wdawdwadadwadswa"
+    },
+    {
+      "id": 3,
+      "title": "dwadwa",
+      "location": "Romans 8:28dwadwa",
+      "theme": "Purposdw",
+      "body": "wdawdwadadwadswa"
+    },
+    {
+      "id": 4,
+      "title": "fesfes",
+      "location": "Hebrews 10:23",
+      "theme": "Hope",
+      "body": "dfawf"
     }
   ]
 }
