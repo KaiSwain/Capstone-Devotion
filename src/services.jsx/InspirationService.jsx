@@ -1,10 +1,10 @@
 
 
-export const GetThemedVerses = (selectedTheme) => {
+export const GetThemedVerses = (themeId) => {
 
-    return fetch(` http://localhost:9000/verses?theme=${selectedTheme}`).then(res => res.json())
+    return fetch(` http://localhost:9000/verses?themeId=${themeId}&_expand=theme`).then(res => res.json())
 }
 
 export const GetAllVerses = () => {
-    return fetch('http://localhost:9000/verses').then(res => res.json())
+    return fetch('http://localhost:9000/verses?&_expand=theme').then(res => res.json())
 }

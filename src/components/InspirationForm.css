@@ -1,3 +1,62 @@
+/* Form Container Styling */
 .inspo-form {
-    max-width: 100px;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #1e1e1e; /* Dark background */
+    padding: 20px; /* Space inside */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    max-width: 400px; /* Match right side's width */
+    min-width: 400px; /* Consistent width */
+    margin: 20px auto; /* Center alignment */
+    box-sizing: border-box;
+  }
+  
+  /* Dropdown Styling */
+  .theme-select {
+    background-color: #333333; /* Dropdown background */
+    color: #ffffff; /* Text color */
+    border: 1px solid #444444; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Space inside dropdown */
+    width: 100%; /* Full width */
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  /* Button Styling */
+  .give-btn {
+    background-color: #444444; /* Button background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Match full width of the container */
+  }
+  
+  .give-btn:hover {
+    background-color: #555555; /* Slightly lighter on hover */
+  }
+  
+  /* Random Verse Display */
+  .random-verse {
+    background-color: #333333; /* Match input background */
+    color: #ffffff;
+    padding: 10px; /* Space inside the box */
+    border-radius: 4px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%; /* Full width matching form */
+  }
+  
+  /* General Layout for Both Forms */
+ .theme {
+    text-align: center;
+    margin: auto;
+ }
+  
