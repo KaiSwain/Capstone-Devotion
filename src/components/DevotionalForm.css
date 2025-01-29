@@ -1,79 +1,47 @@
 /* General form container styling */
 .devo-form {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align content to the left */
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-    
-    border-radius: 10px;
-    
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 15px; /* Space between form elements */
+    background-color: #1e1e1e; /* Dark form background */
+    padding: 20px; /* Space inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 400px; /* Limit the form width */
+    width: 100%; /* Responsive full width */
+    margin: 20px auto; /* Center form horizontally */
   }
   
-  /* Input and textarea styling */
+  /* Input and Textarea Styling */
   .devo-form input,
   .devo-form textarea {
+    background-color: #333333; /* Input and textarea background */
+    color: #ffffff; /* White text */
+    border: 1px solid #444444; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Space inside inputs */
+    font-size: 1rem; /* Standard font size */
+    box-sizing: border-box; /* Include padding in width calculation */
     width: 100%; /* Full width */
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    
-    resize: none; /* Prevent textarea resize */
-    transition: border-color 0.3s ease;
   }
   
-  /* Placeholder styling */
-  .devo-form input::placeholder,
-  .devo-form textarea::placeholder {
-    color: #aaa;
-    font-style: italic;
+  /* Textarea Specific Styling */
+  .devo-form textarea {
+    resize: none; /* Disable resizing */
+    height: 100px; /* Fixed height for the textarea */
   }
   
-  /* Focus state for inputs and textarea */
-  .devo-form input:focus,
-  .devo-form textarea:focus {
-    border-color: #007bff; /* Blue border on focus */
-    outline: none;
+  /* Button Styling */
+  .devo-form .devotion-save-btn {
+    background-color: #444444; /* Button background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
   }
   
-  /* Button styling */
-  .devotion-save-btn {
-    
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  .devo-form .devotion-save-btn:hover {
+    background-color: #555555; /* Lighter background on hover */
   }
-  
-  .devotion-save-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
-  
-  .devotion-save-btn:active {
-    transform: scale(0.95);
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 600px) {
-    .devo-form {
-      padding: 15px;
-    }
-  
-    .devo-form input,
-    .devo-form textarea {
-      font-size: 14px;
-    }
-  
-    .devotion-save-btn {
-      font-size: 14px;
-    }
-  }
-  

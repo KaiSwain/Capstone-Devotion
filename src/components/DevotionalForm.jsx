@@ -6,7 +6,7 @@ export const DevotionalForm = ({sharedRandomVerse, devotion, setDevotion}) => {
   
 
   const handleSave = (event) => {
-    event.preventDefault(); //prevents the automatic refresh
+     //prevents the automatic refresh
 
     console.log("Handle Save", devotion);
 

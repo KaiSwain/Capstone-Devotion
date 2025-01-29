@@ -1,0 +1,78 @@
+
+.devo-inspo {
+  display: flex;
+  
+  
+  justify-content: center;
+  
+  padding: 20px;
+  gap: 100px;
+  
+  
+}
+
+div {
+  display: flex;
+  
+}
+
+/* Forms Container - Side-by-Side */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 100px;
+ 
+  
+ 
+}
+
+/* Individual Forms */
+.inspiration-view, .devotional-view {
+  background-color: var(--form-bg-color);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Devotions List */
+.all-devotions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+
+}
+
+.devotion {
+  background-color: var(--form-bg-color);
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: var(--card-shadow);
+  
+}
+
+/* Text Alignment */
+.devotion h1, .devotion span {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+/* Shared Button Styling */
+button {
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg-color);
+}
