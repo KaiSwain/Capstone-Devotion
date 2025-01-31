@@ -10,6 +10,7 @@
     max-width: 400px; /* Limit the form width */
     width: 100%; /* Responsive full width */
     margin: 20px auto; /* Center form horizontally */
+    min-width: 400px;
   }
   
   /* Input and Textarea Styling */
@@ -40,8 +41,15 @@
     border-radius: 4px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s; /* Smooth hover effect */
+   
   }
   
   .devo-form .devotion-save-btn:hover {
     background-color: #555555; /* Lighter background on hover */
+  }
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
   }

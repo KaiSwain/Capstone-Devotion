@@ -1,17 +1,49 @@
 import { useState } from "react";
-import { PostDevotion } from "../services.jsx/DevotionalService";
+import { DeleteDevotion, PostDevotion, PutDevotion } from "../services.jsx/DevotionalService";
 import './DevotionalForm.css'
+import { useNavigate } from "react-router-dom";
 
-export const DevotionalForm = ({sharedRandomVerse, devotion, setDevotion}) => {
+export const DevotionalForm = ({sharedRandomVerse, devotion, setDevotion, currentUser, setDetector, detector}) => {
   
+ const navigate = useNavigate()
 
   const handleSave = (event) => {
      //prevents the automatic refresh
+    event.preventDefault()
 
-    console.log("Handle Save", devotion);
+    if(detector){
+        PutDevotion(devotion)
+        navigate("/home")
+        console.log("PUTTTED")
+    } else {
+        
+        console.log("POSTING", devotion);
+        devotion.userId = currentUser.id
+        devotion.date = new Date("2023-02-15T14:30:00Z").toISOString().split("T")[0]
+        PostDevotion(devotion);
+        navigate("/home")
+    }
+};
 
-    PostDevotion(devotion);
-  };
+    const handleCancel = (event) => {
+        event.preventDefault()
+        navigate("/home")
+    }
+    
+    const handleDelete = (devotion) => {
+        event.preventDefault()
+        if(detector){
+            DeleteDevotion(devotion)
+        }
+
+        navigate("/home")
+    }
+
+
+
+
+
+    
 
   return (
     <div className="devo-form">
@@ -57,9 +89,21 @@ export const DevotionalForm = ({sharedRandomVerse, devotion, setDevotion}) => {
             setDevotion({ ...devotion, body: event.target.value })
           }
         ></textarea>
-        <button className="devotion-save-btn" onClick={handleSave}>
+
+        <div className="btn">
+
+        <button className="devotion-save-btn" onClick={ 
+            
+            handleSave}>
           Save
         </button>
+        <button className="devotion-cancel-btn" onClick={handleCancel}>
+          cancel
+        </button>
+        <button className="devotion-delete-btn" onClick={() => handleDelete(devotion)}>
+          delete
+        </button>
+                </div>
       </form>
     </div>
   );

@@ -1,0 +1,40 @@
+/* Main container styling */
+.user-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    background-color: #292929; /* Dark background */
+    padding: 20px; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+    color: #ffffff; /* White text color */
+    max-width: 400px; /* Limit width */
+    margin: 20px auto; /* Center horizontally */
+    font-family: 'Arial', sans-serif; /* Font styling */
+    gap: 15px; /* Space between items */
+    margin-top: 150px;
+}
+
+/* User name styling */
+.user-name {
+    font-size: 1.5rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text */
+    color: #f5a623; /* Highlighted color for name */
+}
+
+/* User email styling */
+.user-email {
+    font-size: 1.2rem; /* Slightly smaller font size */
+    color: #cccccc; /* Subtle gray color */
+    word-wrap: break-word; /* Prevent overflow */
+}
+
+/* User verse styling */
+.user-verse {
+    font-size: 1rem; /* Standard font size */
+    color: #999999; /* Light gray text */
+    font-style: italic; /* Italicize for differentiation */
+    border-left: 4px solid #f5a623; /* Add a decorative border */
+    padding-left: 10px; /* Space between border and text */
+    line-height: 1.5; /* Improve text readability */
+}

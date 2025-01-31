@@ -2,19 +2,24 @@ import { useEffect, useState } from "react";
 import {
   GetAllVerses,
   GetThemedVerses,
+  PutFavoriteVerse,
 } from "../services.jsx/InspirationService";
 import { GetAllThemes } from "../services.jsx/ThemeService";
 import "./InspirationForm.css";
+import { GetUserByEmail } from "../services.jsx/UserService";
 
 export const InspirationForm = ({
   setSharedRandomVerse,
   setDevotion,
   devotion,
+  currentUser,
+  setFavoriteVerse,
+  setFavoriteVerseLocation,
 }) => {
   const [allVerses, setAllVerses] = useState([]);
-  const [isVerse, setIsVerse] = useState(false);
+
   const [themedObjects, setThemedObjects] = useState([allVerses]);
-  const [randomVerse, setRandomVerse] = useState({});
+  const [randomVerse, setRandomVerse] = useState({ verse: false });
   const [allThemes, setAllThemes] = useState([]);
 
   useEffect(() => {
@@ -46,10 +51,21 @@ export const InspirationForm = ({
     devotion.location = randomVerse.location;
   };
 
+  const handleFavorite = () => {
+    if (randomVerse.verse) {
+      GetUserByEmail(currentUser.email).then;
+      currentUser.verseId = randomVerse.id;
+      currentUser.verse = randomVerse.verse;
+      currentUser.verseLocation = randomVerse.location;
+      PutFavoriteVerse(currentUser);
+      setFavoriteVerse(currentUser.verse);
+      setFavoriteVerseLocation(currentUser.verseLocation);
+    }
+  };
+
   return (
     <div className="inspo-form">
       {" "}
-      <h1 className="theme">Theme?</h1>
       <select
         className="theme-select"
         defaultValue="0"
@@ -65,10 +81,20 @@ export const InspirationForm = ({
           </option>
         ))}
       </select>
-      <div className="random-verse">{randomVerse?.verse}</div>
-      <button className="give-btn" onClick={() => handleGive()}>
-        Give
-      </button>
+      <div
+        style={{ display: randomVerse.verse !== false ? "flex" : "none" }}
+        className="random-verse"
+      >
+        {randomVerse?.verse}
+      </div>
+      <div className="buttons">
+        <button className="give-btn" onClick={() => handleGive()}>
+          Give
+        </button>
+        <button className="favorite-btn" onClick={() => handleFavorite()}>
+          Favorite
+        </button>
+      </div>
     </div>
   );
 };

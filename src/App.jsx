@@ -1,39 +1,27 @@
-import { useState } from "react";
-import { DevotionalForm } from "./components/DevotionalForm";
-import { InspirationForm } from "./components/InspirationForm";
-import { AllDevotions } from "./components/AllDevotions";
+
+
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Views } from "./views/Views";
+import { Login } from "./auth/Login.jsx";
+import { Authorized } from "./auth/auth.jsx";
 
-export const App = () => {
-  const [sharedRandomVerse, setSharedRandomVerse] = useState({});
-  const [devotion, setDevotion] = useState({
-    id: "",
-    title: "",
-    location: "",
-    theme: "",
-    body: "",
-  });
 
-  return (
-    <>
-      <div className="container">
-        <div className="devo-inspo">
-          <InspirationForm
-            className="Inspiration-view"
-            devotion={devotion}
-            setDevotion={setDevotion}
-            sharedRandomVerse={sharedRandomVerse}
-            setSharedRandomVerse={setSharedRandomVerse}
-          />
-          <DevotionalForm
-            className="devotional-view"
-            devotion={devotion}
-            setDevotion={setDevotion}
-            sharedRandomVerse={sharedRandomVerse}
-          />
-        </div>
-        <AllDevotions />
-      </div>
-    </>
-  );
-};
+export const App = () => { return <>
+
+    <Routes>
+    <Route path="/login" element={<Login/>}/>
+
+
+    
+ <Route 
+ path="*"
+ element={<Authorized>
+    <Views/>
+ </Authorized>} />
+    </Routes>
+
+</>
+
+}
+

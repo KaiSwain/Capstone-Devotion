@@ -11,17 +11,14 @@
   
 }
 
-div {
-  display: flex;
-  
-}
+ 
 
 /* Forms Container - Side-by-Side */
 .container {
   display: flex;
   flex-direction: column;
   margin: auto;
-  gap: 100px;
+  gap: 50px
  
   
  
