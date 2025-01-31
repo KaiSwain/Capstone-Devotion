@@ -82,24 +82,101 @@
   "devotions": [
     {
       "id": 1,
-      "title": "Test",
-      "location": "Joshua 1:9",
-      "theme": "Strength",
-      "body": ""
+      "title": "dwadsdwa",
+      "location": "Numbers 6:24-25",
+      "theme": "Peace",
+      "body": "dwadwadwa",
+      "userId": 2
     },
     {
       "id": 2,
-      "title": "Test 2",
-      "location": "Matthew 5:8",
-      "theme": "Faith",
-      "body": "Body Test"
+      "title": "dsdwas",
+      "location": "Philippians 4:13",
+      "theme": "Strength",
+      "body": "",
+      "userId": 2
     },
     {
       "id": 3,
-      "title": "Test 3",
-      "location": "Jeremiah 29:11",
+      "title": "",
+      "location": "Psalm 23:1",
       "theme": "Hope",
-      "body": ""
+      "body": "",
+      "userId": 2,
+      "date": "2023-02-15"
+    },
+    {
+      "id": 4,
+      "title": "",
+      "location": "",
+      "theme": "",
+      "body": "",
+      "userId": 2,
+      "date": "2023-02-15"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "verseId": 1
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "verseId": 9,
+      "verse": "The Lord is my shepherd, I lack nothing.",
+      "verseLocation": "Psalm 23:1"
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "verseId": 3
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "verseId": 4
+    },
+    {
+      "id": 5,
+      "name": "Daniel Johnson",
+      "email": "daniel.johnson@example.com",
+      "verseId": 5
+    },
+    {
+      "id": 6,
+      "name": "Sophia Wilson",
+      "email": "sophia.wilson@example.com",
+      "verseId": 6
+    },
+    {
+      "id": 7,
+      "name": "Ethan Garcia",
+      "email": "ethan.garcia@example.com",
+      "verseId": 7
+    },
+    {
+      "id": 8,
+      "name": "Olivia Martinez",
+      "email": "olivia.martinez@example.com",
+      "verseId": 8
+    },
+    {
+      "id": 9,
+      "name": "James Anderson",
+      "email": "james.anderson@example.com",
+      "verseId": 9
+    },
+    {
+      "id": 10,
+      "name": "Isabella Thomas",
+      "email": "isabella.thomas@example.com",
+      "verseId": 10
     }
   ]
 }

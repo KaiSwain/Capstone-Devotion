@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
     background-color: #1e1e1e; /* Dark background */
     padding: 20px; /* Space inside */
     border-radius: 8px; /* Rounded corners */
@@ -12,8 +12,17 @@
     min-width: 400px; /* Consistent width */
     margin: 20px auto; /* Center alignment */
     box-sizing: border-box;
+    column-gap: 20px
   }
   
+.buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: -10px;
+}
+
   /* Dropdown Styling */
   .theme-select {
     background-color: #333333; /* Dropdown background */
@@ -35,9 +44,16 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 100%; /* Match full width of the container */
-  }
-  
+    min-width: 80%; /* Match full width of the container */
+}
+
+.favorite-btn {
+    min-width: 80%; /* Match full width of the container */
+    padding: 10px 20px; /* Button padding */
+
+}
+
+
   .give-btn:hover {
     background-color: #555555; /* Slightly lighter on hover */
   }
@@ -52,6 +68,8 @@
     font-size: 1rem;
     box-sizing: border-box;
     width: 100%; /* Full width matching form */
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   /* General Layout for Both Forms */
