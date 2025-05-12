@@ -2,13 +2,13 @@
 /* All Devotions Container */
 .all-devotions {
     display: flex;
-    flex-wrap: wrap-reverse; /* Allow wrapping to create multiple rows */
-    justify-content: flex-end; /* Center the cards within the container */
+    flex-wrap: wrap; /* Allow wrapping to create multiple rows */
+    /* Center the cards within the container */
     align-content: flex-end;
-    flex-direction: row-reverse;
+    flex-direction: row;
     gap: 20px; /* Space between cards */
     padding: 20px; /* Padding around the container */
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #4c437c38;
     border-radius: 8px; /* Smooth rounded corners */
     max-width: 1200px; /* Limit max width for the container */
     margin: 20px auto; /* Center container horizontally */
@@ -33,46 +33,50 @@
 .d-title {
     font-size: 1.2rem; /* Larger font for title */
     font-weight: bold; /* Emphasize the title */
-    color: #ffffff; /* White text */
+    color: rgb(153, 146, 247); /* White text */
     margin-bottom: 8px; /* Space below the title */
+    overflow-wrap: anywhere;
     
 }
 
 .d-theme {
     font-size: 1rem; /* Font size for the theme */
-    color: #797979; /* Light blue color for the theme */
+    color: #ffffff; /* Light blue color for the theme */
     display: block;
     /* Space between title and theme */
     margin: auto;
+    overflow-wrap: anywhere;
 }
 
 .d-card {
     order: 0;
+    
 }
-.d-card:hover {
+.d-card:hover{
     order: 0;
-    background-color: #1e1e1e;
+    background-color: #00000075;
 }
 
 
 .d-body {
     font-size: 1rem; /* Normal font size */
     color: #ffffff; /* White text */
-    background-color: #363636; /* Dark gray background */
+    background-color: #36363600; /* Dark gray background */
     padding: 10px; /* Padding inside the body */
     
     border-radius: 4px; /* Rounded corners */
     /* Space below the body */
     margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow */
     
     margin-bottom: 10px;
     overflow-wrap: anywhere;
     overflow: hidden;
-    
+    font-family: monospace;
     
     min-height: 200px;
     max-height: 200px;
+    letter-spacing: 1.5px;
 }
 
 .edit-btn {
@@ -118,9 +122,16 @@
 
 .d-date {
     font-size: 1rem; /* Font size for the theme */
-    color: #797979; /* Light blue color for the theme */
+    color: #ffffff; /* Light blue color for the theme */
     display: block;
     /* Space between title and theme */
     margin: auto;
-    padding-bottom: 5px;
+    
+    overflow-wrap: anywhere;
+}
+
+.theme-verse {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }

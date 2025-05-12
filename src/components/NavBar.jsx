@@ -15,9 +15,12 @@ export const NavBar = () => {
         <Link to="/home">Home</Link>
       </li>
       <li className="navbar-item">
-        Verse
+        <Link to="/ai">AI</Link>
       </li>
-      
+      <li className="navbar-item">
+        <Link to="/about">About</Link>
+      </li>
+
       {localStorage.getItem("dev_user") ? (
         <li className="navbar-item navbar-logout">
           <Link
@@ -33,7 +36,7 @@ export const NavBar = () => {
         </li>
       ) : (
         ""
-        )}
+      )}
     </ol>
   );
 };

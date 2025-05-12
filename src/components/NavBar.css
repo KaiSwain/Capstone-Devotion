@@ -42,10 +42,10 @@
   }
   
   /* Responsive Adjustments */
-  @media (max-width: 768px) {
+  @media (max-width: 100px) {
     .navbar {
       flex-direction: column; /* Stack items vertically */
-      align-items: flex-start;
+      align-items: center;
       
     }
   

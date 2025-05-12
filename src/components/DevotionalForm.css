@@ -2,8 +2,8 @@
 .devo-form {
     display: flex;
     flex-direction: column; /* Stack form elements vertically */
+    
     gap: 15px; /* Space between form elements */
-    background-color: #1e1e1e; /* Dark form background */
     padding: 20px; /* Space inside the form */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
@@ -16,7 +16,8 @@
   /* Input and Textarea Styling */
   .devo-form input,
   .devo-form textarea {
-    background-color: #333333; /* Input and textarea background */
+    letter-spacing: 2px;
+    background-color: #33333300; /* Input and textarea background */
     color: #ffffff; /* White text */
     border: 1px solid #444444; /* Subtle border */
     border-radius: 4px; /* Rounded corners */
@@ -24,6 +25,7 @@
     font-size: 1rem; /* Standard font size */
     box-sizing: border-box; /* Include padding in width calculation */
     width: 100%; /* Full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
   }
   
   /* Textarea Specific Styling */
@@ -52,4 +54,17 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    
+    
+  }
+
+  textarea {
+    letter-spacing: 4px;
+    letter-spacing: 4px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }

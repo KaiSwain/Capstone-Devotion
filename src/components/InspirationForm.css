@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: #1e1e1e; /* Dark background */
+    
     padding: 20px; /* Space inside */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow effect */
@@ -25,14 +25,16 @@
 
   /* Dropdown Styling */
   .theme-select {
-    background-color: #333333; /* Dropdown background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     color: #ffffff; /* Text color */
+    background-color: #444444; /* Dropdown background */
     border: 1px solid #444444; /* Border color */
     border-radius: 4px; /* Rounded corners */
     padding: 10px; /* Space inside dropdown */
     width: 100%; /* Full width */
     box-sizing: border-box;
     font-size: 1rem;
+    
   }
   
   /* Button Styling */
@@ -60,7 +62,7 @@
   
   /* Random Verse Display */
   .random-verse {
-    background-color: #333333; /* Match input background */
+    background-color: #3a3a3a; /* Match input background */
     color: #ffffff;
     padding: 10px; /* Space inside the box */
     border-radius: 4px; /* Rounded corners */
@@ -70,6 +72,8 @@
     width: 100%; /* Full width matching form */
     margin-top: 10px;
     margin-bottom: 10px;
+    letter-spacing: 1px;
+    
   }
   
   /* General Layout for Both Forms */

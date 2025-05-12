@@ -18,7 +18,7 @@ export const AllDevotions = ({
   const navigate = useNavigate();
 
   useEffect(() => {
-    GetUsersDevotions(currentUser.id).then((arr) => setAllDevotions(arr));
+    GetUsersDevotions(currentUser.id).then((arr) => setAllDevotions(arr.reverse()));
     console.log("GOT ALL DEVOTIONS");
   }, [allDevotions.length, currentUser]);
 
@@ -31,6 +31,7 @@ export const AllDevotions = ({
       theme: d.theme,
       body: d.body,
       userId: currentUser.id,
+      date: d.date
     });
     navigate("/create");
     console.log("clicked", devotion);
@@ -51,22 +52,28 @@ export const AllDevotions = ({
 
   return (
       <div className="all-devotions">
+      <button className="create-btn d-card" onClick={() => handleCreate()}>
+        <span>+</span>
+      </button>
       {allDevotions.map((d) => (
           <div className="d-card" onClick={() => handleEdit(d)} key={d.id}>
-              <div className="d-date">{d.date}</div>
           <div className="d-title">{d.title}</div>{" "}
+          <div>
+          <span className="d-theme">{d.location}</span>
+        </div>
           <div
             className="d-body"
             style={{ display: d.body !== "" ? "flex" : "none" }}
             >
             {d.body}
           </div>
+          <div className="theme-verse">
+
           <span className="d-theme">{d.theme}</span>
+              <div className="d-date">{d.date}</div>
+          </div>
         </div>
       ))}
-      <button className="create-btn d-card" onClick={() => handleCreate()}>
-        <span>+</span>
-      </button>
     </div>
   );
 };

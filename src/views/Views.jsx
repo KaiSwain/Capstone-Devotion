@@ -8,6 +8,8 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import { NavBar } from "../components/NavBar";
 import { Profile } from "../components/Profile";
 import { GetUserByEmail } from "../services.jsx/UserService";
+import { About } from "../components/About";
+import Llama2App from "../components/Ai";
 
 export const Views = () => {
   const [sharedRandomVerse, setSharedRandomVerse] = useState({});
@@ -98,6 +100,7 @@ export const Views = () => {
                     setDevotion={setDevotion}
                     sharedRandomVerse={sharedRandomVerse}
                   />
+                  
                 </div>
               </div>
             </>
@@ -105,6 +108,9 @@ export const Views = () => {
         />
 
         <Route path="profile" element={<Profile currentUser={currentUser} />} />
+        <Route path="about" element={<About />} />
+        <Route path="ai" element={<Llama2App />} />
+        
       </Route>
     </Routes>
 

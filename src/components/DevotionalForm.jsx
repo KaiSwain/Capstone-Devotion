@@ -19,7 +19,7 @@ export const DevotionalForm = ({sharedRandomVerse, devotion, setDevotion, curren
         
         console.log("POSTING", devotion);
         devotion.userId = currentUser.id
-        devotion.date = new Date("2023-02-15T14:30:00Z").toISOString().split("T")[0]
+        devotion.date = new Date().toISOString().split("T")[0]
         PostDevotion(devotion);
         navigate("/home")
     }
