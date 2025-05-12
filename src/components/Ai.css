@@ -1,0 +1,157 @@
+/* General Reset */
+
+  
+  /* Main container */
+  .all {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(53, 33, 107, 0.788);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+    margin:auto;
+    margin-top: 100px;
+    display: flex;
+    min-width: 1300px;
+    gap:100px
+  }
+
+  .header-body-send {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    margin:30px
+  }
+
+  .please-response {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1100px;
+    max-height: 400px;
+    min-height: 200px;
+    block-size: auto;
+    overflow: scroll;
+  }
+  
+  /* Header */
+  .header {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #7658ff;
+  }
+  
+  .please {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #4400ff;
+    margin-top:-80px
+  }
+
+
+  /* Form */
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .body {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .body:focus {
+    background: rgba(47, 0, 255, 0.322);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Button */
+  .button {
+    background: linear-gradient(135deg, #0e00cf, #a7a7a7);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #591cff, #3310cf);
+  }
+  
+  /* Error Message */
+  p[style] {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Response Message */
+  .response {
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    
+    overflow-wrap: break-word;
+    min-width: 400px;
+  }
+
+  ::-webkit-scrollbar {
+    color: #8a4a81;
+}
+::-webkit-scrollbar-corner {
+      color: #945e8d;
+
+  }
+
+  ::-webkit-scrollbar-track {
+    color: #ff7b00f5;
+  }
+
+
+  /* For each response line */
+  .please-response-line {
+    margin-bottom: 10px; /* Add spacing between lines */
+    padding: 10px;   /* Optional: Indent for each paragraph */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  /* Optional: Highlight verse numbers */
+  .response-line strong {
+    color: #ff8c00; /* Highlight verse numbers in orange */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

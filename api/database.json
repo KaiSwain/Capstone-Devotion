@@ -1,70 +1,344 @@
 {
-  "verses": [
+  "themes": [
     {
       "id": 1,
-      "verse": "For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope. - Jeremiah 29:11",
-      "theme": "Hope"
+      "name": "Hope"
     },
     {
       "id": 2,
-      "verse": "I can do all things through him who strengthens me. - Philippians 4:13",
-      "theme": "Strength"
+      "name": "Faith"
     },
     {
       "id": 3,
-      "verse": "The Lord is my shepherd; I shall not want. - Psalm 23:1",
-      "theme": "Provision"
+      "name": "Strength"
     },
     {
       "id": 4,
-      "verse": "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go. - Joshua 1:9",
-      "theme": "Courage"
+      "name": "Peace"
     },
     {
       "id": 5,
-      "verse": "But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness. - Galatians 5:22",
-      "theme": "Spiritual Growth"
+      "name": "Love"
     },
     {
       "id": 6,
-      "verse": "Cast all your anxiety on him because he cares for you. - 1 Peter 5:7",
-      "theme": "Anxiety & Trust"
+      "name": "Joy"
     },
     {
       "id": 7,
-      "verse": "The name of the Lord is a fortified tower; the righteous run to it and are safe. - Proverbs 18:10",
-      "theme": "Safety"
+      "name": "Forgiveness"
     },
     {
       "id": 8,
-      "verse": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. - John 3:16",
-      "theme": "Salvation & Love"
+      "name": "Wisdom"
     },
     {
       "id": 9,
-      "verse": "Do not be overcome by evil, but overcome evil with good. - Romans 12:21",
-      "theme": "Goodness"
+      "name": "Trust"
     },
     {
       "id": 10,
-      "verse": "Blessed are the peacemakers, for they will be called children of God. - Matthew 5:9",
-      "theme": "Peace"
+      "name": "Compassion"
+    },
+    {
+      "id": 11,
+      "name": "Gratitude"
+    },
+    {
+      "id": 12,
+      "name": "Perseverance"
+    },
+    {
+      "id": 13,
+      "name": "Humility"
+    },
+    {
+      "id": 14,
+      "name": "Courage"
+    }
+  ],
+  "verses": [
+    {
+      "id": 1,
+      "verse": "For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope.",
+      "themeId": 1,
+      "location": "Jeremiah 29:11"
+    },
+    {
+      "id": 2,
+      "verse": "I can do all things through him who strengthens me.",
+      "themeId": 3,
+      "location": "Philippians 4:13"
+    },
+    {
+      "id": 3,
+      "verse": "Cast all your anxiety on him because he cares for you.",
+      "themeId": 4,
+      "location": "1 Peter 5:7"
+    },
+    {
+      "id": 4,
+      "verse": "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.",
+      "themeId": 3,
+      "location": "Galatians 6:9"
+    },
+    {
+      "id": 5,
+      "verse": "The Lord bless you and keep you; the Lord make his face shine on you and be gracious to you.",
+      "themeId": 4,
+      "location": "Numbers 6:24-25"
+    },
+    {
+      "id": 6,
+      "verse": "The Lord is my strength and my shield; my heart trusts in him, and he helps me.",
+      "themeId": 2,
+      "location": "Psalm 28:7"
+    },
+    {
+      "id": 7,
+      "verse": "Blessed are the pure in heart, for they will see God.",
+      "themeId": 2,
+      "location": "Matthew 5:8"
+    },
+    {
+      "id": 8,
+      "verse": "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.",
+      "themeId": 3,
+      "location": "Joshua 1:9"
+    },
+    {
+      "id": 9,
+      "verse": "The Lord is my shepherd, I lack nothing.",
+      "themeId": 1,
+      "location": "Psalm 23:1"
+    },
+    {
+      "id": 10,
+      "verse": "The peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus.",
+      "themeId": 4,
+      "location": "Philippians 4:7"
+    },
+    {
+      "id": 11,
+      "verse": "And now these three remain: faith, hope, and love. But the greatest of these is love.",
+      "themeId": 5,
+      "location": "1 Corinthians 13:13"
+    },
+    {
+      "id": 12,
+      "verse": "Rejoice in the Lord always. I will say it again: Rejoice!",
+      "themeId": 6,
+      "location": "Philippians 4:4"
+    },
+    {
+      "id": 13,
+      "verse": "Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.",
+      "themeId": 7,
+      "location": "Ephesians 4:32"
+    },
+    {
+      "id": 14,
+      "verse": "The fear of the Lord is the beginning of wisdom, and knowledge of the Holy One is understanding.",
+      "themeId": 8,
+      "location": "Proverbs 9:10"
+    },
+    {
+      "id": 15,
+      "verse": "Trust in the Lord with all your heart and lean not on your own understanding.",
+      "themeId": 9,
+      "location": "Proverbs 3:5"
+    },
+    {
+      "id": 16,
+      "verse": "Above all, love each other deeply, because love covers over a multitude of sins.",
+      "themeId": 5,
+      "location": "1 Peter 4:8"
+    },
+    {
+      "id": 17,
+      "verse": "The Lord has done great things for us, and we are filled with joy.",
+      "themeId": 6,
+      "location": "Psalm 126:3"
+    },
+    {
+      "id": 18,
+      "verse": "For if you forgive other people when they sin against you, your heavenly Father will also forgive you.",
+      "themeId": 7,
+      "location": "Matthew 6:14"
+    },
+    {
+      "id": 19,
+      "verse": "If any of you lacks wisdom, you should ask God, who gives generously to all without finding fault, and it will be given to you.",
+      "themeId": 8,
+      "location": "James 1:5"
+    },
+    {
+      "id": 20,
+      "verse": "Blessed is the one who trusts in the Lord, whose confidence is in him.",
+      "themeId": 9,
+      "location": "Jeremiah 17:7"
+    },
+    {
+      "id": 21,
+      "verse": "Be kind and compassionate to one another, forgiving each other, just as in Christ God forgave you.",
+      "themeId": 10,
+      "location": "Ephesians 4:32"
+    },
+    {
+      "id": 22,
+      "verse": "The Lord is compassionate and gracious, slow to anger, abounding in love.",
+      "themeId": 10,
+      "location": "Psalm 103:8"
+    },
+    {
+      "id": 23,
+      "verse": "Give thanks to the Lord, for he is good; his love endures forever.",
+      "themeId": 11,
+      "location": "1 Chronicles 16:34"
+    },
+    {
+      "id": 24,
+      "verse": "I will give thanks to the Lord because of his righteousness; I will sing the praises of the name of the Lord Most High.",
+      "themeId": 11,
+      "location": "Psalm 7:17"
+    },
+    {
+      "id": 25,
+      "verse": "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.",
+      "themeId": 12,
+      "location": "Galatians 6:9"
+    },
+    {
+      "id": 26,
+      "verse": "Blessed is the one who perseveres under trial because, having stood the test, that person will receive the crown of life that the Lord has promised to those who love him.",
+      "themeId": 12,
+      "location": "James 1:12"
+    },
+    {
+      "id": 27,
+      "verse": "Humble yourselves before the Lord, and he will lift you up.",
+      "themeId": 13,
+      "location": "James 4:10"
+    },
+    {
+      "id": 28,
+      "verse": "When pride comes, then comes disgrace, but with humility comes wisdom.",
+      "themeId": 13,
+      "location": "Proverbs 11:2"
+    },
+    {
+      "id": 29,
+      "verse": "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go.",
+      "themeId": 14,
+      "location": "Joshua 1:9"
+    },
+    {
+      "id": 30,
+      "verse": "Wait for the Lord; be strong and take heart and wait for the Lord.",
+      "themeId": 14,
+      "location": "Psalm 27:14"
     }
   ],
   "devotions": [
     {
       "id": 1,
-      "title": "",
-      "verse": "",
-      "chapter": "",
-      "body": ""
+      "title": "Awesome",
+      "location": "1 Peter 5:7",
+      "theme": "Peace",
+      "body": "You are so cool!",
+      "userId": 2,
+      "date": "2025-02-05"
     },
     {
       "id": 2,
-      "title": "dsadwa",
-      "verse": "dwads",
-      "chapter": "dwadas",
-      "body": "dawdsawd"
+      "title": "LETS GO",
+      "location": "Fun",
+      "theme": "Yoohoo",
+      "body": "GOTCHA NECK!",
+      "userId": 2,
+      "date": "2025-02-05"
+    },
+    {
+      "id": 4,
+      "title": "Pie",
+      "location": "Psalm 7:17",
+      "theme": "Gratitude",
+      "body": "I want pie",
+      "userId": 2,
+      "date": "2025-02-06"
+    },
+    {
+      "id": 5,
+      "title": "Yayddwadsdwadswa",
+      "location": "Galatians 6:9",
+      "theme": "Strength",
+      "body": "nice!",
+      "userId": 2,
+      "date": "2025-05-07"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "verseId": 1
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "verseId": 12,
+      "verse": "Rejoice in the Lord always. I will say it again: Rejoice!",
+      "verseLocation": "Philippians 4:4"
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "verseId": 3
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "email": "emily.davis@example.com",
+      "verseId": 4
+    },
+    {
+      "id": 5,
+      "name": "Daniel Johnson",
+      "email": "daniel.johnson@example.com",
+      "verseId": 5
+    },
+    {
+      "id": 6,
+      "name": "Sophia Wilson",
+      "email": "sophia.wilson@example.com",
+      "verseId": 6
+    },
+    {
+      "id": 7,
+      "name": "Ethan Garcia",
+      "email": "ethan.garcia@example.com",
+      "verseId": 7
+    },
+    {
+      "id": 8,
+      "name": "Olivia Martinez",
+      "email": "olivia.martinez@example.com",
+      "verseId": 8
+    },
+    {
+      "id": 9,
+      "name": "James Anderson",
+      "email": "james.anderson@example.com",
+      "verseId": 9
+    },
+    {
+      "id": 10,
+      "name": "Isabella Thomas",
+      "email": "isabella.thomas@example.com",
+      "verseId": 10
     }
   ]
 }

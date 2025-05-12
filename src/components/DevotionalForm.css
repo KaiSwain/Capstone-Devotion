@@ -1,0 +1,70 @@
+/* General form container styling */
+.devo-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    
+    gap: 15px; /* Space between form elements */
+    padding: 20px; /* Space inside the form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    max-width: 400px; /* Limit the form width */
+    width: 100%; /* Responsive full width */
+    margin: 20px auto; /* Center form horizontally */
+    min-width: 400px;
+  }
+  
+  /* Input and Textarea Styling */
+  .devo-form input,
+  .devo-form textarea {
+    letter-spacing: 2px;
+    background-color: #33333300; /* Input and textarea background */
+    color: #ffffff; /* White text */
+    border: 1px solid #444444; /* Subtle border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px; /* Space inside inputs */
+    font-size: 1rem; /* Standard font size */
+    box-sizing: border-box; /* Include padding in width calculation */
+    width: 100%; /* Full width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  }
+  
+  /* Textarea Specific Styling */
+  .devo-form textarea {
+    resize: none; /* Disable resizing */
+    height: 100px; /* Fixed height for the textarea */
+  }
+  
+  /* Button Styling */
+  .devo-form .devotion-save-btn {
+    background-color: #444444; /* Button background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth hover effect */
+   
+  }
+  
+  .devo-form .devotion-save-btn:hover {
+    background-color: #555555; /* Lighter background on hover */
+  }
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+    
+  }
+
+  textarea {
+    letter-spacing: 4px;
+    letter-spacing: 4px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }

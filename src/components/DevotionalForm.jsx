@@ -1,59 +1,109 @@
 import { useState } from "react";
-import { PostDevotion } from "../services.jsx/DevotionalService";
+import { DeleteDevotion, PostDevotion, PutDevotion } from "../services.jsx/DevotionalService";
+import './DevotionalForm.css'
+import { useNavigate } from "react-router-dom";
 
-export const DevotionalForm = () => {
-  const [devotion, setDevotion] = useState({
-    id: "",
-    title: "",
-    verse: "",
-    chapter: "",
-    body: "",
-  });
+export const DevotionalForm = ({sharedRandomVerse, devotion, setDevotion, currentUser, setDetector, detector}) => {
+  
+ const navigate = useNavigate()
 
   const handleSave = (event) => {
-    event.preventDefault(); //prevents the automatic refresh
+     //prevents the automatic refresh
+    event.preventDefault()
 
-    console.log("Handle Save",devotion);
+    if(detector){
+        PutDevotion(devotion)
+        navigate("/home")
+        console.log("PUTTTED")
+    } else {
+        
+        console.log("POSTING", devotion);
+        devotion.userId = currentUser.id
+        devotion.date = new Date().toISOString().split("T")[0]
+        PostDevotion(devotion);
+        navigate("/home")
+    }
+};
 
-    PostDevotion(devotion);
-  };
+    const handleCancel = (event) => {
+        event.preventDefault()
+        navigate("/home")
+    }
+    
+    const handleDelete = (devotion) => {
+        event.preventDefault()
+        if(detector){
+            DeleteDevotion(devotion)
+        }
+
+        navigate("/home")
+    }
+
+
+
+
+
+    
 
   return (
     <div className="devo-form">
       <form>
-        <textarea
+        <input
           name="devotion_title"
           rows="1"
           cols="10"
           placeholder="Title"
           defaultValue={devotion.title}
-          onChange={(event) => setDevotion({ ...devotion, title: event.target.value})}
-        ></textarea>
-        <textarea
-          name="devotion_chapter"
+          onChange={(event) =>
+            setDevotion({ ...devotion, title: event.target.value })
+          }
+        ></input>
+        <input
+          name="devotion_theme"
           rows="1"
           cols="10"
-          placeholder="Chapter"
-          defaultValue={devotion.chapter}
-          onChange={(event) => setDevotion({ ...devotion, chapter: event.target.value})}
-        ></textarea>
-        <textarea
-          name="devotion_verse"
+          placeholder="Theme"
+          value={devotion.theme}
+          onChange={(event) =>
+            setDevotion({ ...devotion, theme: event.target.value })
+          }
+        ></input>
+        
+        <input
+          name="devotion_location"
           rows="1"
           cols="10"
-          placeholder="Verse"
-          defaultValue={devotion.verse}
-          onChange={(event) => setDevotion({ ...devotion, verse: event.target.value})}
-        ></textarea>
+          placeholder="location"
+          value={devotion.location}
+          onChange={(event) =>
+            setDevotion({ ...devotion, location: event.target.value })
+          }
+        ></input>
         <textarea
           name="devotion_body"
-          rows="10"
+          rows="11"
           cols="50"
           placeholder="Write your devotion here..."
           defaultValue={devotion.body}
-          onChange={(event) => setDevotion({ ...devotion, body: event.target.value})}
+          onChange={(event) =>
+            setDevotion({ ...devotion, body: event.target.value })
+          }
         ></textarea>
-        <button className="devotion-save-btn" onClick={handleSave}> Save </button>
+
+        <div className="btn">
+
+        <button className="devotion-save-btn" onClick={ 
+            
+            handleSave}>
+          Save
+        </button>
+        <button className="devotion-cancel-btn" onClick={handleCancel}>
+          cancel
+        </button>
+        <button className="devotion-delete-btn" onClick={() => handleDelete(devotion)}>
+          delete
+        </button>
+                </div>
       </form>
     </div>
   );
